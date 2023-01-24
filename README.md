@@ -22,3 +22,12 @@ cursor_obj.execute("SELECT * FROM medicines LIMIT 5")
 result = cursor_obj.fetchall()
 
 display(result)
+_______________________________________________________
+import sqlite3
+
+from IPython.display import display
+import pandas as pd
+
+df = pd.DataFrame(result)
+
+display(df.head(5))
